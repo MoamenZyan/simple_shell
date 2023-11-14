@@ -19,8 +19,7 @@ void handle_CTRLC(int signal)
 
 int main(__attribute__((unused)) int argc, char *argv[])
 {
-	char *buffer = NULL, **com;
-	ssize_t read = 4096;
+	char *buffer = NULL;
 	int comCount = 0;
 
 	signal(SIGINT, handle_CTRLC);
